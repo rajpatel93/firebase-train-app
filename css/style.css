@@ -1,0 +1,52 @@
+body{
+  background:url("https://harry-potter-sounds.ambient-mixer.com/images_template/c/f/5/cf5b04701c72d96ee3be8bd691d3c494_full.jpg");
+}
+.jumbotron{
+  background-color:#000000;
+  color:whitesmoke;
+  border:5px grey solid;
+font: 2em Arial,sans-serif;
+}
+.ride{
+  font-size:40px;
+  color:gray;
+}
+
+.panel-body{
+  border:5px white;
+}
+.current ,.add{
+  background-color:#337ab7;
+  color:black;
+  font-size:20px;
+}
+#trainTable{
+  background-color:white;
+  color:black;
+  font-size:20px;
+  font: bold;
+}
+#trainNameInput,#destinationInput,#timeInput,#frequencyInput,{
+  color:black;
+  font-size:18px;
+  background-color:white;
+}
+.form-group{
+  color: black;
+  font-size:20px;
+}
+.btn{
+  background-color:green;
+  font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
