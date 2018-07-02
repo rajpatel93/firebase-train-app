@@ -1,19 +1,20 @@
-
-  var config = {
-    apiKey: "AIzaSyAQzglfqsgvCm7oGe27ZNiHX3Pk05QEKKw",
-    authDomain: "train-schedule-2b2eb.firebaseapp.com",
-    databaseURL: "https://train-schedule-2b2eb.firebaseio.com",
-    projectId: "train-schedule-2b2eb",
-    storageBucket: "",
-    messagingSenderId: "1073201235604"
+var config = {
+  apiKey: "AIzaSyCy4Y4l9EMm8GkALLw5X5XE0Y9kvMmTtzA",
+  authDomain: "train-app-dcdbb.firebaseapp.com",
+  databaseURL: "https://train-app-dcdbb.firebaseio.com",
+  projectId: "train-app-dcdbb",
+  storageBucket: "train-app-dcdbb.appspot.com",
+  messagingSenderId: "768780823093"
 };
 firebase.initializeApp(config);
+
+
 var database = firebase.database();
 $('#addTrainBtn').on("click", function() {
 
   var trainName = $("#trainNameInput").val().trim();
   var destination = $("#destinationInput").val().trim();
-  var firstTrain = moment($("#timeInput").val().trim(), "HH:mm").format("HH:mm");
+  var firstTrain = moment($("#timeInput").val().trim(), "HH:mm").subtract(10,"years").format("X");
   var frequency = $("#frequencyInput").val().trim();
 
   var newTrain = {
